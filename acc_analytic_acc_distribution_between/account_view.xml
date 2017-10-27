@@ -67,7 +67,7 @@
         <field name="model">account.invoice</field>
         <field name="type">form</field>
         <field name="inherit_id" ref="account.invoice_supplier_form"/>
-        <field name="priority">2</field>
+        <field name="priority">1</field>
         <field name="arch" type="xml">
             <field name="account_analytic_id" position="after">
                 <field name="analytics_id" domain="[('plan_id','&lt;&gt;',False)]" context="{'journal_id':parent.journal_id}" groups="analytic.group_analytic_accounting"/>
